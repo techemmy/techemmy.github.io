@@ -452,16 +452,12 @@ section.project img {
   text-align: left;
 }
 
-.side-socials {
+.sidenavbar-socials {
   background-color: #183153;
   border-radius: 50px;
   margin-left: 2rem;
   position: fixed;
   top: calc(100%/3);
-}
-
-.side-socials {
-  transition-delay: 2s;
 }
 
 /* Redes Sociais Buttons */
@@ -484,7 +480,7 @@ section.project img {
   margin: 1em;
 }
 
-.side-socials .grow-container {
+.sidenavbar-socials .grow-container {
   display: block;
 }
 

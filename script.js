@@ -59,18 +59,27 @@ window.onload = function () {
 };
 
 window.onscroll = function () {
-  myFunction();
+  console.log(window.scrollY)
+  toggleClassesForResponsiveness();
 };
 
 // navbar responsiveness
 var navbar = document.querySelector(".primary-nav");
 var sticky = navbar.offsetTop;
+var contactSection = document.querySelector("#contact");
+var sideNavbar = document.querySelector(".sidenavbar-socials");
 
-function myFunction() {
+function toggleClassesForResponsiveness() {
   if (window.scrollY >= sticky) {
     navbar.classList.add("sticky");
   } else {
     navbar.classList.remove("sticky");
+  }
+
+  if (window.scrollY >= (contact.offsetTop - window.innerHeight)) {
+    sideNavbar.style.opacity = 0;
+  } else {
+    sideNavbar.style.opacity = 1;
   }
 }
 
