@@ -46,7 +46,7 @@ h1::selection,
 h2::selection,
 h3::selection,
 h4::selection,
-h5::selection, 
+h5::selection,
 h6::selection {
   background-color: var(--blue-tint-color);
   color: var(--secondary-color);
@@ -452,6 +452,18 @@ section.project img {
   text-align: left;
 }
 
+.side-socials {
+  background-color: var(--codebg-color);
+  border-radius: 50px;
+  margin-left: 2rem;
+  position: fixed;
+  top: calc(100%/3);
+}
+
+.side-socials {
+  transition-delay: 2s;
+}
+
 /* Redes Sociais Buttons */
 .circle-button {
   font-family: "Roboto", sans-serif;
@@ -471,6 +483,11 @@ section.project img {
   display: inline-block;
   margin: 1em;
 }
+
+.side-socials .grow-container {
+  display: block;
+}
+
 
 .to-blue:hover {
   background: #2862ff;
@@ -555,7 +572,7 @@ footer {
     margin: 50px 0 80px;
     text-align: center;
   }
-  
+
   #projects section.project div.project-img {
     max-width: 300px;
     max-height: 300px;
@@ -563,22 +580,22 @@ footer {
     width: auto;
     margin: 20px auto;
   }
-  
+
   section.project img {
     max-width: 100%;
     max-height: 100%;
   }
-  
+
   .project-content {
     position: static;
   }
-  
+
   .project-description {
     padding: 10px;
     position: relative;
     text-align: center;
   }
-  
+
   .img-left .project-description {
     margin: 10px 15px;
   }
