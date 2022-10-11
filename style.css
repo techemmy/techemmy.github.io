@@ -453,7 +453,7 @@ section.project img {
 }
 
 .side-socials {
-  background-color: var(--codebg-color);
+  background-color: #183153;
   border-radius: 50px;
   margin-left: 2rem;
   position: fixed;
@@ -506,7 +506,7 @@ section.project img {
 }
 
 .to-dev:hover {
-  background: #183153;
+  background: var(--codebg-color);
 }
 
 @keyframes circle-anim {
