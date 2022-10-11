@@ -59,7 +59,6 @@ window.onload = function () {
 };
 
 window.onscroll = function () {
-  console.log(window.scrollY)
   toggleClassesForResponsiveness();
 };
 
@@ -77,8 +76,10 @@ function toggleClassesForResponsiveness() {
   }
 
   if (window.scrollY >= (contact.offsetTop - window.innerHeight)) {
+    sideNavbar.classList.add("displayNone")
     sideNavbar.style.opacity = 0;
   } else {
+    sideNavbar.classList.remove("displayNone")
     sideNavbar.style.opacity = 1;
   }
 }

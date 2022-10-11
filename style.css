@@ -639,6 +639,23 @@ footer {
   }
 }
 
+@media (max-width: 1080px) {
+  .sidenavbar-socials {
+    margin: 2rem;
+    top: auto;
+    bottom: 0;
+    display: flex;
+    z-index: 5;
+  }
+  .sidenavbar-socials .grow-container{
+    display: inline-block;
+    text-align: center;
+  }
+  .displayNone {
+    display: none;
+  }
+}
+
 @media(prefers-reduced-motion) {
   .fadeIn.in-view {
     transition: none;
