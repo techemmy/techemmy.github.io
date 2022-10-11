@@ -88,8 +88,6 @@ function showOnIntersect(entries) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
         entry.target.classList.add("in-view")
-    } else if (!entry.isIntersecting) {
-      entry.target.classList.remove("in-view")
     }
   });
 }
