@@ -295,8 +295,17 @@ svg {
 }
 
 #projects section.project div.project-img {
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 400px;
+  display: flex;
+}
+
+#projects section.project.img-left div.project-img {
+  justify-content: flex-start;
+}
+
+#projects section.project.img-right div.project-img {
+  justify-content: flex-end;
 }
 
 #projects section.img-left {
@@ -322,6 +331,8 @@ section.project img {
 
 .project-title span {
   font-size: 1.5rem;
+  text-shadow: 3px 3px 20px var(--background-color),
+    -2px 1px 30px var(--background-color);
 }
 .tag span {
   color: var(--background-color);
