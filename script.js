@@ -75,11 +75,11 @@ function toggleClassesForResponsiveness() {
     navbar.classList.remove("sticky");
   }
 
-  if (window.scrollY >= (contact.offsetTop - window.innerHeight)) {
-    sideNavbar.classList.add("displayNone")
+  if (window.scrollY >= contact.offsetTop - window.innerHeight) {
+    sideNavbar.classList.add("displayNone");
     sideNavbar.style.opacity = 0;
   } else {
-    sideNavbar.classList.remove("displayNone")
+    sideNavbar.classList.remove("displayNone");
     sideNavbar.style.opacity = 1;
   }
 }
@@ -97,7 +97,21 @@ targets.forEach((target) => {
 function showOnIntersect(entries) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-        entry.target.classList.add("in-view")
+      entry.target.classList.add("in-view");
     }
   });
 }
+
+const days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+document.getElementById("currentUTCTime").textContent =
+  new Date().toUTCString();
+document.getElementById("currentDay").textContent =
+  days[new Date().getUTCDay()];

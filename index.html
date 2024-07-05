@@ -38,7 +38,7 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3GQXDEQE0M"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
+  function gtag() {dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-3GQXDEQE0M');
@@ -111,7 +111,8 @@
         <i class="fas fa-angle-double-down"></i>
       </article>
       <article id="illustration">
-        <img src="./assets/images/meart-haze-nobg.png" alt="Transparent picture of emmanuel" class="fadeIn" />
+        <img data-testid="slackProfilePicture" src="./assets/images/meart-haze-nobg.png"
+          alt="Transparent picture of emmanuel" class="fadeIn" />
       </article>
       <article id="right">
         <h2 class="typewrite" data-period="2000"
@@ -720,25 +721,24 @@
       <section class="content">
         <article>
           <p class="fadeIn">I'm <span class="code">Emmanuel Oloyede.</span> I'm a Nigerian, based in Lagos. I also go by
-            Tech Emmy on YouTube. I'm an
+            <code data-testid="slackDisplayName">techemmy</code> on YouTube. I'm an
             enthusiastic, goal-driven, life-long learner. I'm passionate about
             teaching others how to code and solve problems. I learn by building projects,
             reverse engineering, and the docs 😁.
-
-          </p>
-          <br>
-          <p class="fadeIn">I'm a proficient software engineer with experience in full-stack
+            I'm a proficient software engineer with experience in full-stack
             web technologies such as <span class="code">NodeJs</span>, <span class="code">Javascript</span>, <span
               class="code">Python</span>, <span class="code">HTML</span>, <span class="code">CSS</span> and some of
             their frameworks.
-            As of now, I'm providing solutions and solving problems as a backend engineer.
-            I'm also an Open Source contributor on GitHub. I emerged top 5 in the MTN mPulse Hackathon 2020.
-            I'd appreciate the opportunity of a chat at your earliest convenience
-            so we can discuss how we can work together.
           </p>
+          <br>
+          <p class="fadeIn">
+            My tech goal for the next 2 years is to be able to build any software system I imagine.
+          </p>
+          <br>
+          <p data-testid="slackEmail" class="fadeIn">Send me a mail: emmanueltopea@gmail.com </p>
         </article>
         <div>
-          <figure><img src="./assets/images/me.png" loading="lazy" alt="A picture of Emmanuel"></figure>
+          <figure><img src="./assets/images/meart-haze-nobg.png" loading="lazy" alt="A picture of Emmanuel"></figure>
         </div>
       </section>
     </section>
@@ -794,6 +794,10 @@
 
   <footer class="container">
     <p>Made with ❤️ by TechEmmy (Me 😉)</p>
+    <p id="currentUTCTime" data-testid="currentTimeUTC">
+
+    </p>
+    <p id="currentDay" data-testid="currentDay"></p>
   </footer>
 </body>
 
